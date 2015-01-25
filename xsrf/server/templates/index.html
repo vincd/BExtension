@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Index</title>
+	</head>
+	<body>
+		<h1>XSRF 101</h1>
+		<form action="/login" method="POST">
+			<input type="hidden" name="xsrf" value="{{ xsrf }}" />
+			<input type="text" name="username" />
+			<input type="password" name="passwd" />
+			<input type="submit" value="Login" />
+		</form>
+	</body>
+</html>
